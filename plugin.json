@@ -1,1 +1,16 @@
-
+{
+  "name": "2captcha",
+  "displayName": "2captcha for Cursor",
+  "description": "Solve any captcha (ReCaptcha, Cloudflare, etc.) using AI agent tools.",
+  "version": "1.0.0",
+  "icon": "https://2captcha.com/favicon.ico",
+  "mcpServers": {
+    "2captcha-server": {
+      "command": "node",
+      "args": ["${pluginDir}/dist/index.js"],
+      "env": {
+        "TWOCAPTCHA_API_KEY": ""
+      }
+    }
+  }
+}
