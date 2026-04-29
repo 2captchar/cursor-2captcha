@@ -1,1 +1,21 @@
-
+{
+  "name": "cursor-2captcha",
+  "version": "1.0.0",
+  "description": "Official 2captcha integration for Cursor AI. Solve captchas during web automation.",
+  "type": "module",
+  "bin": {
+    "cursor-2captcha": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
